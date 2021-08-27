@@ -1,0 +1,28 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+.banner-image {
+    height: 460px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.color-primary {
+    color: #23286b;
+}
+.bg-primary {
+    background-color: #23286b;
+}
+.color-secondary {
+    color: #e94a47;
+}
+.bg-secondary {
+    background-color: #e94a47;
+}
+.dataTables_length,
+.dataTables_filter {
+    margin-bottom: 1rem;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #dbdbdb;
+}
