@@ -25,4 +25,9 @@ class CartModel extends Model
     {
         return DB::table('cart')->join('products', 'products.id_product', '=', 'cart.product_id')->where('user_id', Auth::user()->id)->get();
     }
+
+    public function cartDelete()
+    {
+        return DB::table('cart')->where('user_id', Auth::user()->id)->delete();
+    }
 }

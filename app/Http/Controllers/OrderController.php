@@ -41,7 +41,7 @@ class OrderController extends Controller
             $detail_order->save();
         }
 
-        CartModel::truncate();
+        $this->CartModel->cartDelete();
 
         return redirect()->to('/history')->with('pesan', 'Berhasil dipesan.');
     }
